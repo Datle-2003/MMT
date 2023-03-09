@@ -2,6 +2,8 @@
 const API_KEY = "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";
 const API_URL = "https://api.openai.com/v1/completions";
 
+const axios = require("axios")
+
 function init() {
   let res_elm = document.createElement("div");
   res_elm.innerHTML = "Hello, how can I help you?";
