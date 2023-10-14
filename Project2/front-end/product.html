@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <title>Product List</title>
+  </head>
+  <body>
+    <header>
+      <a href="product.html">
+        <img class="logo" src="img.png" alt="Logo" />
+      </a>
+      <a href="product.html" class="no-underline">
+        <h2>Laptop crawler</h2>
+      </a>
+    </header>
+    <div class="search-wrapper">
+      <div class="search-container">
+        <form>
+          <div class="search-input-container">
+            <input type="text" placeholder="Search..." id="search-bar" />
+            <input type="submit" value="Search" />
+          </div>
+
+          <div class="filter-container">
+            <label for="brand-filter">Hãng sản phẩm:</label>
+            <select id="brand-filter" name="brand">
+              <option value="">Tất cả</option>
+              <option value="macbook">Macbook</option>
+              <option value="dell">Dell</option>
+              <option value="lenovo">Lenovo</option>
+              <option value="acer">Acer</option>
+              <option value="msi">MSI</option>
+              <option value="asus">Asus</option>
+            </select>
+
+            <label for="store-filter">Tên cửa hàng:</label>
+            <select id="store-filter" name="store">
+              <option value="">Tất cả</option>
+              <option value="phongvu">Phong Vũ</option>
+              <option value="thegioididong">Thế giới di động</option>
+              <option value="fpt">FPT Shop</option>
+            </select>
+
+            <label for="price-filter">Mức giá</label>
+            <select id="price-filter" name="store">
+              <option value="">Tất cả</option>
+              <option value="lt15">Dưới 15 triêu</option>
+              <option value="15-20">15 - 20 triệu</option>
+              <option value="20-25">20 - 25 triệu</option>
+              <option value="25-30">25 - 30 triệu</option>
+              <option value="bt30">Trên 30 triệu</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="sort-bar">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+
+      <ul class="product-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

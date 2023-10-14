@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+}
+
+.message-container {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: inset 0 0 10px 4px #1116;
+  clear: both;
+}
+
+.messages {
+  overflow-y: scroll;
+  height: 89%;
+  padding: 0 12px;
+  scroll-behavior: smooth;
+}
+
+.send-message {
+  outline: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 16px;
+  border-radius: 25px 0 25px 25px;
+  background: #ececee;
+  color: #333;
+  border: solid 1px #777;
+  border-right: none;
+}
+
+.send-button {
+  outline: none;
+  font-size: 20px;
+  background: #1c1f46;
+  border-radius: 32px;
+  color: #eee;
+  transition-duration: 0.2s;
+}
+
+.send-button:active,
+.record-button:active {
+  font-size: 16px;
+}
+
+.bot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(img.svg);
+  background-size: 100%;
+  margin: 10px;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#robot {
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message-input {
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.record-button,
+.send-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 32px;
+  margin: 2px;
+}
+
+.record-button {
+  background-color: #ddd;
+  color: #333;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.left,
+.right {
+  font-size: 18px;
+  clear: both;
+  display: inline-block;
+  padding: 14px;
+  overflow: hidden;
+  max-width: 60%;
+  margin: 8px 16px;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+.left {
+  float: left;
+  color: #000;
+  background: #b3bfca;
+  border-radius: 0 16px 16px 16px;
+}
+
+.right {
+  float: right;
+  color: #fff;
+  background: #1c1f46;
+  border-radius: 16px 16px 0 16px;
+}

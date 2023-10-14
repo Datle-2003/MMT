@@ -1,0 +1,53 @@
+[
+    {
+        "log": [
+            "[ 2023-05-25 14:44:19] Connected to device",
+            "[ 2023-05-25 14:44:21] List application",
+            "[ 2023-05-25 14:44:25] Start application: notepad",
+            "[ 2023-05-25 14:46:50] Connected to device",
+            "[ 2023-05-25 14:46:57] List application",
+            "[ 2023-05-25 14:47:05] List processes",
+            "[ 2023-05-25 14:47:16] Capture the screen image - Image saved: image1.bmp",
+            "[ 2023-05-25 14:55:47] Connected to device",
+            "[ 2023-05-25 14:57:32] Connected to device",
+            "[ 2023-05-25 15:01:51] Connected to device",
+            "[ 2023-05-25 15:03:56] Connected to device",
+            "[ 2023-05-25 15:04:35] List application"
+        ],
+        "password": "11",
+        "username": "dd"
+    },
+    {
+        "log": [
+            "[ 2023-05-25 15:13:06] Connected to device",
+            "[ 2023-05-25 15:13:16] List application",
+            "[ 2023-05-25 15:13:20] Start application: notepad",
+            "[ 2023-05-25 15:16:18] Connected to device",
+            "[ 2023-05-25 15:17:30] Connected to device",
+            "[ 2023-05-25 15:17:41] List application",
+            "[ 2023-05-25 15:19:13] Connected to device",
+            "[ 2023-05-25 15:21:02] Connected to device",
+            "[ 2023-05-25 15:21:06] List application",
+            "[ 2023-05-25 15:21:10] List application",
+            "[ 2023-05-25 15:21:17] Capture the screen image - Image saved: image1.bmp",
+            "[ 2023-05-25 15:29:13] Connected to device",
+            "[ 2023-05-25 15:29:16] List application",
+            "[ 2023-05-25 15:36:17] Connected to device",
+            "[ 2023-05-25 15:36:21] List application",
+            "[ 2023-05-25 15:36:28 ] Traversing directory tree - list files/foldersD:\\",
+            "[ 2023-05-25 15:37:05 ] Traversing directory tree - Change directory from D:\\ to D:\\Test",
+            "[ 2023-05-25 15:38:53 ] Traversing directory tree - help",
+            "[ 2023-05-25 15:39:08 ] Traversing directory tree - list files/foldersD:\\Test",
+            "[ 2023-05-25 15:39:42 ] Traversing directory tree - move file from a.py to D:\\Test\\New folder\\a.py",
+            "[ 2023-05-25 15:40:32 ] Traversing directory tree - copy file a.sql to D:\\Test\\New folder\\a.sql",
+            "[ 2023-05-25 15:40:45 ] Traversing directory tree - Change directory from D:\\Test to D:\\Test\\New folder",
+            "[ 2023-05-25 15:40:51 ] Traversing directory tree - delete file a.sql",
+            "[ 2023-05-25 15:41:05 ] Traversing directory tree - list files/foldersD:\\Test\\New folder",
+            "[ 2023-05-25 15:41:18 ] Traversing directory tree - rename a.py to abc.py",
+            "[ 2023-05-25 15:41:23 ] Traversing directory tree - change to parent directoryD:\\Test\\New folder",
+            "[ 2023-05-25 15:41:31 ]  Disconnected from the device"
+        ],
+        "password": "22",
+        "username": "dat"
+    }
+]

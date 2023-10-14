@@ -1,0 +1,41 @@
+import numpy as np
+import PIL
+import PIL.Image
+import tensorflow as tf
+import pathlib
+
+uploaded_files = files.upload()
+
+
+data_augmentation = tf.keras.Sequential([
+  tf.keras.layers.RandomFlip(mode='horizontal'),                       # Lật ngang      
+  tf.keras.layers.RandomRotation(factor=0.2),                         # Xoay với góc xoay tối đa 20%
+  tf.keras.layers.RandomZoom(height_factor=(-0.2, 0.2), width_factor=(-0.2, 0.2)),  # Thu/phóng với tỉ lệ thu/phóng tối đa +/- 20%
+                      
+])
+
+preprocess_input = tf.keras.applications.mobilenet_v2.preprocess_input
+
+img_shape = (img_height, img_width, 3,)
+base_model = tf.keras.applications.EfficientNetB0(include_top=False, weights='imagenet')###############
+
+base_model.trainable = False
+global_average_layer = tf.keras.layers.GlobalAveragePooling2D()
+prediction_layer = tf.keras.layers.Dense(num_classes, activation='softmax')
+
+# build
+inputs = tf.keras.Input(shape=img_shape)
+x = data_augmentation(inputs)
+x = preprocess_input(x)
+x = base_model(x, training=False)
+x = global_average_layer(x)
+x = tf.keras.layers.Dropout(0.2)(x)
+outputs = prediction_layer(x)
+model = tf.keras.Model(inputs, outputs)
+
+# compile
+
+base_learning_rate = 0.0001 ###################
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=base_learning_rate), loss = 'sparse_categorical_crossentropy', metrics=['accuracy'])
+
+model.load_weights('EfficientNetB0.h5')
